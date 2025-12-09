@@ -5,16 +5,16 @@ jobs:
   execucao-atividade:
     runs-on: ubuntu-latest
     steps:
-      -name: Baixar o código (checkout)
-       uses: actions/checkout@v4
+      - name: Baixar o código (checkout)
+        uses: actions/checkout@v4
 
-      -name: Configurar python
-       uses: actions/setup-python@v4
-       with:
+      - name: Configurar python
+        uses: actions/setup-python@v4
+        with:
          python-version: '3.10'
 
-      -name: listar arquivos
-       run: ls -la
+      - name: listar arquivos
+        run: ls -la
 
-      -name: Exibir mensagem de conclusão
-       run: echo "Atividade concluída com sucesso!"
+      - name: Exibir mensagem de conclusão
+        run: echo "Atividade concluída com sucesso!"
